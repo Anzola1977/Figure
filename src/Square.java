@@ -1,32 +1,31 @@
 public class Square extends Quadrangle implements Figure {
 
-    public Square(int a, int b, String color) {
-        super(a, b, color);
-        b = a;
+    public Square(int a, String color) {
+        super(a, a, color);
     }
 
     @Override
-    public double getArea() {
-        return 0;
+    public double area() {
+        return (Math.pow(a, 2));
     }
 
     @Override
-    public double getPerimeter() {
-        return 0;
+    public double perimeter() {
+        return 4 * a;
     }
 
     @Override
     public double getLargeDiagonal() {
-        return 0;
+        return (Math.sqrt(2) * a);
     }
 
     @Override
     public double getHeight() {
-        return 0;
+        return a;
     }
 
     @Override
     public String getColor() {
-        return null;
+        return color;
     }
 }

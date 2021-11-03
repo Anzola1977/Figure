@@ -6,26 +6,26 @@ public class Rectangle extends Quadrangle implements Figure {
 
     @Override
     public double getLargeDiagonal() {
-        return 0;
+        return Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
     }
 
     @Override
     public double getHeight() {
-        return 0;
+        return Math.min(a, b);
     }
 
     @Override
     public String getColor() {
-        return null;
+        return color;
     }
 
     @Override
-    public double getArea() {
-        return 0;
+    public double area() {
+        return a * b;
     }
 
     @Override
-    public double getPerimeter() {
-        return 0;
+    public double perimeter() {
+        return 2 * a + 2 * b;
     }
 }

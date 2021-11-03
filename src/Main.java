@@ -1,18 +1,4 @@
-public abstract class Quadrangle {
-    int a, b;
-    String color;
-
-    public Quadrangle(int a, int b, String color) {
-        this.a = a;
-        this.b = b;
-        this.color = color;
-    }
-
-    public abstract double getLargeDiagonal();
-
-    public abstract double getHeight();
-
-    public abstract String getColor();
+/*public class Main {
 
     public static void main(String[] args) {
         Square square = new Square(2, "red");
@@ -25,4 +11,4 @@ public abstract class Quadrangle {
         System.out.println(rhombuses.getHeight());
         System.out.println(parallelogram.area());
     }
-}
+}*/
